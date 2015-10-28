@@ -1,0 +1,60 @@
+/** main.css**/
+
+body {
+	font-family: openSans, Segoe UI, Arial,sans-serif;
+	text-decoration: underline bold;
+	font-size: 19px;
+}
+
+#form_Section{
+	border: solid 2px #409023;
+	border-radius: 5px;
+	font-family: 'Monotype Corsiva';
+	width: 303px;
+	display: inline-block;
+}
+
+#newInfo {
+	width: 200px;
+	display: inline-block;
+}
+
+#form_Section label {
+	font-weight: bold;
+	color: #ffffff;
+
+}
+
+footer {
+	vertical-align: down;
+}
+
+.formBorder {								/*. for selecting class*/
+	border: solid 9px;
+	border-radius: 3px;
+	border-width: 2px;
+	border-color: black;
+	width: 300px;
+	display: inline-block;
+}
+
+#form_Section input[type=submit] {
+	background-color: green;
+	color: white;
+	border-radius: 15px;
+	padding: 5px;
+	box-shadow: 2px;
+	/*position: absolute;
+	top: 3px;
+	left: 5px;*/ 
+}
+
+.container {
+	width: 989px;
+	margin: 0 auto;
+
+}
+
+header nav {
+	float: right;
+}

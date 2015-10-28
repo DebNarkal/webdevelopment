@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dynamic html</title>
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+	<header><h1><center>This is a dynamic html page.</center></h1></header>
+	<section>
+		<div id="dynContent" onmouseover="changeColor(this.id)" onmouseout="returnColor()">
+			This is the place where dynamic content will go on. Please click here to see the changes.
+		</div>
+		<div id="newdynContent" onclick="changeColor(this.id)" onmouseout="returnColor()">
+			Hello guys
+		</div>
+	</section>
+
+	<script src = "script/main.js"></script>
+</body>
+</html>

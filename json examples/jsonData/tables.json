@@ -1,0 +1,23 @@
+{ 
+ "Tables": [
+    {"TableName": "BusinessKeySpecification"},
+    {"TableName": "EBMappedClass"},
+    {"TableName": "ECClass"},
+    {"TableName": "ECCustomAttributeClass"},
+    {"TableName": "ECCustomAttributeECProperty"},
+    {"TableName": "ECCustomAttributeECSchema"},
+    {"TableName": "ECProperty"},
+    {"TableName": "ECRelationshipClass"},
+    {"TableName": "ECSchema"},
+    {"TableName": "ECSchemaChildList"},
+    {"TableName": "ECSchemaReference"},
+    {"TableName": "Mapping"},
+    {"TableName": "ObjectAttributes"},
+    {"TableName": "PreviousNameArray"},
+    {"TableName": "PreviousNames"},
+    {"TableName": "SchemaGrandChild"},
+    {"TableName": "SourceTarget"},
+    {"TableName": "bccsDisplayGroup"},
+    {"TableName": "bccsFilter"}
+  ] 
+}
