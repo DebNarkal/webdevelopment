@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Defining controller</title>
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <label for="firstName">First Name:</label><input type="text" id="firstName" placeholder="First Name" ng-model="firstName"><br>
+        <label for="lastName">Last Name:</label><input type="text" id="lastName" placeholder="Last Name" ng-model="lastName"><br>
+        Full Name:{{firstName + " " +lastName}}
+    </div>
+    <script src="scripts/angular.min.js"></script>
+    <script>
+        var app= angular.module('myApp',[]);
+        app.controller('myCtrl',function($scope) {
+            $scope.firstName = "John";
+            $scope.lastName="Doe";
+        });
+    </script>
+</body>
+</html>
