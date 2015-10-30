@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html ng-app="myApp">
+    <head>
+        <title>import from github</title>
+    </head>
+    <body>
+        <h1>{{message}}</h1>
+        
+        <div ng-controller="MainController">
+            <div>First Name: {{person.firstName}}</div>
+            <div>Last Name: {{person.lastName}}</div>
+        </div>
+        
+        <div ng-controller="githubController">
+            <div> Name: {{ users.login }}</div>
+            <div> img: <img ng-src={{users.avatar_url}}></img></div>
+        <div> user id: {{users.id}}</div>
+        </div>
+        
+        <div><center><h1>This is anothe way of calling the github method</h1></center></div>
+        <div ng-controller="newgithubController">
+            <div> Name: {{ nusers.login }}</div>
+            <div> img: <img ng-src={{nusers.avatar_url}}></img>
+        </div>
+        
+        
+        <script src="scripts/angular.min.js"></script>
+        <script src="scripts/personData.js"></script>
+    </body>
+</html>
