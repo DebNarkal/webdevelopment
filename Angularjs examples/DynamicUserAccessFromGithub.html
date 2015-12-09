@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>user from github</title>
+    <script src="scripts/angular.min.js"></script>
+</head>
+<body ng-app="hello" ng-controller="hi">
+    
+    <header><center><h1>This is a Dynamic User information board </h1></center></header>
+    <div>
+        <form name="gitHubForm">
+            <input type=search ng-model='Uname' placeholder="Username to find">
+             <input type="submit" value="Search" ng-click="searchValue()">
+        </form>
+    </div>
+    
+    <div>
+        <h2>
+            {{user.name}}
+        </h2>
+        <img ng-src={{user.avatar_url}} title={{user.name}} height="80" width="80" ng-show=user>
+    </div>
+    <script src="scripts/dynUsrInfo.js"></script>
+</body>
+</html>

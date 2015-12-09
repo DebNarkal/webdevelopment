@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+	<title>parsing a json data</title>
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/parsejson.js"></script>
+</head>
+<body>
+	<header><center><h1>Example of parsing a json file.</h1></center></header>
+    <section>
+        
+        <div ng-controller='ctrl'>
+            <table border="1px">
+            	<thead>
+            		<tr>
+            			<th>Name</th>
+            		</tr>
+            	</thead>
+            	<tbody>
+            		<tr ng-repeat="table in tableData.Tables">
+            			<td>{{table.TableName}}</td>
+
+            		</tr>
+            	</tbody>
+            </table>
+        </div>
+        
+        <div ng-controller="usrdata" id ="usrdet+">
+        	<table border="1px">
+        		<thead>
+        			<tr>
+        				<th>user id</th>
+        				<th>user name</th>
+        			</tr>
+        		</thead>
+        		<tbody>
+        			<tr ng-repeat="usr in userData | limitTo:10| orderBy:'login' | filter: id=4">
+        				<td>{{usr.id}}</td>
+        				<td>{{usr.login}}</td>
+        			</tr>
+        		</tbody>
+        	</table>
+        </div>
+    </section>
+    
+</body>
+</html>

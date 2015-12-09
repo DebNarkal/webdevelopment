@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>Adding event to form</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet/main.min.css">
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/ng-submitexample.js"></script>
+</head>
+<body ng-controller="formController">
+	<header><h1><center>Welcome to github api</center></h1></header>
+    {{username}}
+	<div id="form">
+        
+        <form name="githubUserSearchForm" ng-submit="search()">
+            <label for="userName">UserName:</label><input type=search id="userName" required placeholder="User name to find" ng-model="username">
+            <input type="submit" class="buttons">
+        </form>
+    </div>
+    <div>
+        {{user.login}}<br>
+        {{user.id}}
+    </div>
+    
+    <!--<div ng-include="'json files/mojombo.json'"></div>-->
+</body>
+</html>

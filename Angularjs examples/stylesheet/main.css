@@ -1,0 +1,14 @@
+#form {
+    border: 1px;
+    border-radius: 2px;
+    border-color: aqua;
+    border-style: solid;
+}
+
+.buttons {
+    border-style: solid;
+    border: 2px;
+    border-radius: 2px;
+    border-color: black;
+    
+}
